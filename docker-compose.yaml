@@ -1,0 +1,18 @@
+version: "3.8"
+services:
+  start:
+    image: 'node:16'
+    ports:
+      - '3000:3000'
+    working_dir: '/code/pizzeria/frontend'
+    command: ['npm', 'start']
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./:/code/pizzeria/frontend
+  npm:
+    image: 'node:16'
+    working_dir: '/code/pizzeria/frontend'
+    entrypoint: ['npm']
+    volumes:
+      - ./:/code/pizzeria/frontend
