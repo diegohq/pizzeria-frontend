@@ -20,6 +20,9 @@ export default function Home() {
             <Input type="password" placeholder="Type your password" />
             <Button type="submit" loading={false}>Login</Button>
           </form>
+
+          <a className={styles.text}>Sign up</a>
+
         </div>
 
       </div>
