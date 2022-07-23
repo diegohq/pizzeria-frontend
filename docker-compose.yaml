@@ -1,11 +1,11 @@
 version: "3.8"
 services:
-  start:
+  dev:
     image: 'node:16'
     ports:
       - '3000:3000'
     working_dir: '/code/pizzeria/frontend'
-    command: ['npm', 'start']
+    command: ['npm', 'run', 'dev']
     stdin_open: true
     tty: true
     volumes:
