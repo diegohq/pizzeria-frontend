@@ -1,5 +1,6 @@
-import Head from "../../node_modules/next/head";
-import Image from "../../node_modules/next/image";
+import Head from "next/head";
+import Image from "next/image";
+import Link from "next/link";
 import logoImg from "../../public/logo.svg";
 import styles from "../../styles/home.module.scss";
 import { Button } from "../components/ui/Button/index";
@@ -21,7 +22,9 @@ export default function Home() {
             <Button type="submit" loading={false}>Login</Button>
           </form>
 
-          <a className={styles.text}>Sign up</a>
+          <Link href="/signup">
+            <a className={styles.text}>Sign up</a>
+          </Link>
 
         </div>
 
