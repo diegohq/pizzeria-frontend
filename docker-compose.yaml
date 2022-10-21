@@ -3,7 +3,7 @@ services:
   dev:
     image: 'node:16'
     ports:
-      - '3000:3000'
+      - '8000:3000'
     working_dir: '/code/pizzeria/frontend'
     command: ['npm', 'run', 'dev']
     stdin_open: true
